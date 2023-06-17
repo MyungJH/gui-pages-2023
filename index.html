@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUI Pages</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>10:09</span>
+      </div>
+      <div class="status-bar__column">
+        <span>78%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="setting-header">
+      <h1 class="setting-header__title">Setting Page</h1>
+    </header>
+
+    <form class="system-purpose">
+      <h2>System Purpose</h2>
+      <select id="system-purpose__selected">
+        <option value="#" class="system-purpose__selected__value">
+          select purpose name
+        </option>
+        <option value="#" class="system-purpose__selected__value">1</option>
+        <option value="#" class="system-purpose__selected__value">2</option>
+        <option value="#" class="system-purpose__selected__value">3</option>
+      </select>
+      <div class="system-purpose__buttons">
+        <button class="system-purpose__btn" type="button">Modify</button>
+        <p>Modify the selected System Purpose</p>
+        <button class="system-purpose__btn" type="button">New</button>
+        <p>Registration New Purpose</p>
+        <button class="system-purpose__btn" type="button">Go to Ready</button>
+        <p>Setting Values</p>
+      </div>
+    </form>
+
+    <form class="system-operation">
+      <h2>System Operation</h2>
+      <button class="system-operation__btn" type="button">Start</button>
+      <p>Write Json File</p>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap");
+@import "reset.css";
+@import "variables.css";
+@import "status-bar.css";
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.setting-header {
+  margin-top: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  font-weight: 700;
+}
+
+.setting-header__title {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.system-purpose {
+  margin-top: 30px;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+.system-purpose h2 {
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#system-purpose__selected {
+  width: 30%;
+  margin-bottom: 30px;
+}
