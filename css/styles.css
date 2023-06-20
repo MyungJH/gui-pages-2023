@@ -4,39 +4,70 @@
 @import "status-bar.css";
 
 body {
-  font-family: "Manrope", sans-serif;
+	font-family: "Manrope", sans-serif;
 }
 
 .setting-header {
-  margin-top: 30px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  display: flex;
-  justify-content: center;
-  text-align: start;
-  font-weight: 700;
+	margin-top: 30px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: center;
+	text-align: start;
+	font-weight: 700;
 }
 
 .setting-header__title {
-  margin-bottom: 15px;
-  font-size: 30px;
+	margin-bottom: 15px;
+	font-size: 30px;
 }
 
 .system-purpose {
-  margin-top: 30px;
-  padding: 7px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid gray;
+	margin-top: 30px;
+	padding: 7px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid gray;
 }
 
 .system-purpose h2 {
-  font-weight: 600;
-  font-size: 25px;
-  margin-bottom: 20px;
+	font-weight: 600;
+	font-size: 25px;
+	margin-bottom: 20px;
 }
 
 #system-purpose__selected {
-  width: 30%;
-  margin-bottom: 30px;
+	width: 30%;
+	margin-bottom: 30px;
+}
+
+.system-purpose__buttons {
+	display: flex;
+}
+
+.system-purpose__btn {
+	margin: 0px 5px;
+}
+
+.system-operation {
+	margin-top: 30px;
+	padding: 7px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid gray;
+}
+
+.system-operation h2 {
+	font-weight: 600;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.system-operation__buttons {
+	display: flex;
+}
+
+.system-operation__btn {
+	margin: 0px 5px;
 }
