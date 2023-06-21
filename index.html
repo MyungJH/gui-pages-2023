@@ -22,8 +22,12 @@
 			</div>
 		</div>
 
-		<header class="setting-header">
-			<h1 class="setting-header__title">Setting Page</h1>
+		<header class="screen-header">
+			<h1 class="screen-header__title">Setting Page</h1>
+			<div class="screen-header__icons">
+				<span><i class="fas fa-search fa-lg"></i></span>
+				<span><i class="fas fa-cog fa-lg"></i></span>
+			</div>
 		</header>
 
 		<form class="system-purpose">
@@ -36,11 +40,15 @@
 				<option value="#" class="system-purpose__selected__value">2</option>
 				<option value="#" class="system-purpose__selected__value">3</option>
 			</select>
-			<div class="system-purpose__buttons">
+			<div class="system-purpose__modify">
 				<button class="system-purpose__btn" type="button">Modify</button>
 				<p class="system-purpose__text">Modify the selected System Purpose</p>
+			</div>
+			<div class="system-purpose__new">
 				<button class="system-purpose__btn" type="button">New</button>
 				<p class="system-purpose__text">Registration New Purpose</p>
+			</div>
+			<div class="system-purpose__gotoready">
 				<button class="system-purpose__btn" type="button">Go to Ready</button>
 				<p class="system-purpose__text">Setting Values</p>
 			</div>
@@ -48,11 +56,32 @@
 
 		<form class="system-operation">
 			<h2>System Operation</h2>
-			<div class="system-operation__buttons">
+			<div class="system-operation__start">
 				<button class="system-operation__btn" type="button">Start</button>
 				<p class="system-operation__text">Write Json File</p>
 			</div>
 		</form>
+
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__btn">
+					<a class="nav__link" href="#">
+						<i class="fas fa-home fa-2x"></i>
+					</a>
+				</li>
+				<li class="nav__btn">
+					<a class="nav__link" href="#">
+						<i class="fas fa-search fa-2x"></i>
+					</a>
+				</li>
+				<li class="nav__btn">
+					<a class="nav__link" href="#">
+						<span class="nav__ellipsis"></span>
+						<i class="fas fa-ellipsis-h fa-2x"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
 
 		<script
 			src="https://kit.fontawesome.com/6478f529f2.js"

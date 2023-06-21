@@ -1,33 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap");
 @import "reset.css";
 @import "variables.css";
-@import "status-bar.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/screen-header.css";
+@import "components/nav-bar.css";
 
 body {
 	font-family: "Manrope", sans-serif;
 }
 
-.setting-header {
-	margin-top: 30px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-	display: flex;
-	justify-content: center;
-	text-align: start;
-	font-weight: 700;
-}
-
-.setting-header__title {
-	margin-bottom: 15px;
-	font-size: 30px;
-}
-
 .system-purpose {
-	margin-top: 30px;
-	padding: 7px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border: 1px solid gray;
+	margin: 40px 50px;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .system-purpose h2 {
@@ -41,21 +28,41 @@ body {
 	margin-bottom: 30px;
 }
 
-.system-purpose__buttons {
+.system-purpose__modify,
+.system-purpose__new,
+.system-purpose__gotoready {
 	display: flex;
+	justify-content: flex-start;
 }
 
-.system-purpose__btn {
-	margin: 0px 5px;
+.system-purpose__btn,
+.system-operation__btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 5px;
+	width: 15%;
+	border: none;
+	padding: 5px 5px;
+	font-weight: 600;
+	background-color: rgba(224, 211, 17, 0.4);
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.system-purpose__text,
+.system-operation__text {
+	margin-left: 10px;
+	margin-bottom: 7px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .system-operation {
-	margin-top: 30px;
-	padding: 7px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border: 1px solid gray;
+	margin: 50px 50px;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .system-operation h2 {
@@ -64,10 +71,7 @@ body {
 	margin-bottom: 20px;
 }
 
-.system-operation__buttons {
+.system-operation__start {
 	display: flex;
-}
-
-.system-operation__btn {
-	margin: 0px 5px;
+	justify-content: flex-start;
 }

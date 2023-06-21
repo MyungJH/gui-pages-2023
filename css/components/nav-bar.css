@@ -1,0 +1,31 @@
+.nav {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #f9f9fa;
+	padding: 25px 50px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav__list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav__link {
+	/* 자식요소에 position: absolute설정 위해, 부모요소에 기준점(relative)을 잡음. */
+	position: relative;
+}
+
+.nav__ellipsis {
+	/* display: flex로 굳이 안바꾸고 block으로 해도 괜찮지 않음...? */
+	display: block;
+	background-color: tomato;
+	height: 7px;
+	width: 7px;
+	border-radius: 3.5px;
+	position: absolute;
+	left: 30px;
+	bottom: 30px;
+}
